@@ -12,6 +12,9 @@ An Airline company called Spark Airways, recieves JSON flight data on daily basi
 - Shell
 
 ## ETL Pipeline
+
+![Pipeline](resources/pipeline.png)
+
 1. Create BigQuery tables avg_delays_by_flight_nums and avg_delays_by_distance using BQ command shell script. 
 2. Create ephemeral Dataproc Cluster.
 3. Load daily JSON file as a dataframe in pyspark script (flights-etl.py) and apply transformations to flight delays data using spark-sql to produre output tables.
